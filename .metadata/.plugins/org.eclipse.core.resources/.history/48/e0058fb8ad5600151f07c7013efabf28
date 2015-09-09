@@ -1,7 +1,7 @@
 // MAIN WINDOW BACKGROUND COLOR
 var mainWindow = Ti.UI.createWindow ({
-	title: "ABOUT ME",
-	backgroundColor: "#F2F2F2"
+	title: "About Me",
+	backgroundColor: "#A69D81"
 });
 
 //NAVIGATION WINDOW
@@ -15,14 +15,30 @@ var titleView = Ti.UI.createView ({
 	top: 0
 });
 
+var border = Ti.UI.createView ({
+	backgroundColor: "#dbdbdb",
+	height: 1,
+	top: titleView.height + titleView.top
+});
+
+var titleLabel = Ti.UI.createLabel ({
+	text: "Sequester McKinney",
+	font: {fontSize: 30, fontFamily: "Arial", fontWeight: "bold"},
+	top: 0,
+	width: "100%",
+	textAlign: "center",
+	backgroundColor: "#A69D81"
+});
+
 //CUSTOM TABLE HEADER
 var aboutMeTableHeader = Ti.UI.createView ({
+	height: 50,
 	backgroundColor: "#042F56"
 });
 
 var aboutMeTableHeaderText = Ti.UI.createLabel ({
 	text: "ABOUT ME",
-	font: {fontSize: 33, fontWeight: "bold"},
+	font: {fontSize: 22, fontWeight: "bold"},
 	color: "#fff"
 });
 
@@ -37,34 +53,14 @@ if(Ti.Platform.name === "iPhone OS" ) {
 	aboutMe.style = Ti.UI.iPhone.TableViewStyle.GROUPED;
 }
 
-//INTRO IMAGE AND BUTTON
-var imageBackground = Ti.UI.createImageView ({
-		image: "images/mckinney-sequester-headshot.jpg",
-		layout: "vertical",
-		top: 0
-	});
-	
-var aboutMeView = Ti.UI.createView ({
-	backgroundColor: "#7DA63F",
-	width: "100%",
-	height: 80,
-	bottom: 0
-});
-
-var aboutMeLabel = Ti.UI.createLabel ({
-	text: "ABOUT ME",
-	color: "#fff",
-	align: "center"
-});
-
 // SECTIONS && ROWS
 
 var aboutMeSection = Ti.UI.createTableViewSection ({
 	headerView: aboutMeTableHeader,
 });
 
-aboutMeView.add(aboutMeLabel);
-mainWindow.add(aboutMeSection,imageBackground, aboutMeView);
+titleView.add(titleLabel);
+mainWindow.add(titleView, border, aboutMeSection);
 navWindow.open();
 
 //load require file

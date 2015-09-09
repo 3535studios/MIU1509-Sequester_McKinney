@@ -17,6 +17,7 @@ var titleView = Ti.UI.createView ({
 
 //CUSTOM TABLE HEADER
 var aboutMeTableHeader = Ti.UI.createView ({
+	//height: 50,
 	backgroundColor: "#042F56"
 });
 
@@ -64,7 +65,8 @@ var aboutMeSection = Ti.UI.createTableViewSection ({
 });
 
 aboutMeView.add(aboutMeLabel);
-mainWindow.add(aboutMeSection,imageBackground, aboutMeView);
+//titleView.add(titleLabel);
+mainWindow.add(titleView, border, aboutMeSection,imageBackground, aboutMeView);
 navWindow.open();
 
 //load require file
