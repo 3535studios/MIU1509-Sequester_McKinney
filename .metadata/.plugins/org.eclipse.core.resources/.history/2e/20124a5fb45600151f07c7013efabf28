@@ -15,22 +15,9 @@ var titleView = Ti.UI.createView ({
 	top: 0
 });
 
-//CUSTOM TABLE HEADER
-var aboutMeTableHeader = Ti.UI.createView ({
-	backgroundColor: "#042F56"
-});
-
-var aboutMeTableHeaderText = Ti.UI.createLabel ({
-	text: "ABOUT ME",
-	font: {fontSize: 30, fontWeight: "bold"},
-	color: "#fff"
-});
-
-aboutMeTableHeader.add(aboutMeTableHeaderText);
-
 // TABLE
 var aboutMe = Ti.UI.createTableView ({
-	//top: border.top + border.height
+	top: border.top + border.height
 });
 
 if(Ti.Platform.name === "iPhone OS" ) {
@@ -52,7 +39,7 @@ var aboutMeView = Ti.UI.createView ({
 });
 
 var aboutMeLabel = Ti.UI.createLabel ({
-	text: "Learn About Me",
+	text: "ABOUT ME",
 	color: "#fff",
 	font: {fontSize: 33, fontWeight: "bold"},
 	align: "center"

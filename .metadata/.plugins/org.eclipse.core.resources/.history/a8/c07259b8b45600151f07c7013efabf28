@@ -52,7 +52,7 @@ var aboutMeView = Ti.UI.createView ({
 });
 
 var aboutMeLabel = Ti.UI.createLabel ({
-	text: "Learn About Me",
+	text: "ABOUT ME >>",
 	color: "#fff",
 	font: {fontSize: 33, fontWeight: "bold"},
 	align: "center"

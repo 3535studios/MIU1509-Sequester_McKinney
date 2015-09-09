@@ -21,7 +21,7 @@ var aboutMeTableHeader = Ti.UI.createView ({
 });
 
 var aboutMeTableHeaderText = Ti.UI.createLabel ({
-	text: "ABOUT ME",
+	text: "LEARN ABOUT ME",
 	font: {fontSize: 30, fontWeight: "bold"},
 	color: "#fff"
 });
@@ -52,7 +52,7 @@ var aboutMeView = Ti.UI.createView ({
 });
 
 var aboutMeLabel = Ti.UI.createLabel ({
-	text: "Learn About Me",
+	text: "ABOUT ME",
 	color: "#fff",
 	font: {fontSize: 33, fontWeight: "bold"},
 	align: "center"

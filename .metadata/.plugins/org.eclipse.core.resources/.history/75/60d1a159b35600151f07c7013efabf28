@@ -1,7 +1,7 @@
 // MAIN WINDOW BACKGROUND COLOR
 var mainWindow = Ti.UI.createWindow ({
 	title: "ABOUT ME",
-	backgroundColor: "#f2f2f2"
+	backgroundColor: "#ccc"
 });
 
 //NAVIGATION WINDOW
@@ -22,7 +22,7 @@ var aboutMeTableHeader = Ti.UI.createView ({
 
 var aboutMeTableHeaderText = Ti.UI.createLabel ({
 	text: "ABOUT ME",
-	font: {fontSize: 30, fontWeight: "bold"},
+	font: {fontSize: 33, fontWeight: "bold"},
 	color: "#fff"
 });
 
@@ -47,12 +47,12 @@ var imageBackground = Ti.UI.createImageView ({
 var aboutMeView = Ti.UI.createView ({
 	backgroundColor: "#7DA63F",
 	width: "100%",
-	height: 95,
+	height: "100%",
 	bottom: 0
 });
 
 var aboutMeLabel = Ti.UI.createLabel ({
-	text: "Learn About Me",
+	text: "ABOUT ME",
 	color: "#fff",
 	font: {fontSize: 33, fontWeight: "bold"},
 	align: "center"
