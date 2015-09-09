@@ -1,64 +1,68 @@
-// this sets the background color of the master UIView (when there are no windows/tab groups on it)
-Titanium.UI.setBackgroundColor('#000');
-
-// create tab group
-var tabGroup = Titanium.UI.createTabGroup();
-
-
-//
-// create base UI tab and root window
-//
-var win1 = Titanium.UI.createWindow({  
-    title:'Tab 1',
-    backgroundColor:'#fff'
-});
-var tab1 = Titanium.UI.createTab({  
-    icon:'KS_nav_views.png',
-    title:'Tab 1',
-    window:win1
+// MAIN WINDOW BACKGROUND COLOR
+var mainWindow = Ti.UI.createWindow ({
+	title: "About Me",
+	backgroundColor: "#A69D81"
 });
 
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 1',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+//NAVIGATION WINDOW
+var navWindow = Ti.UI.iOS.createNavigationWindow ({
+	window: mainWindow
 });
 
-win1.add(label1);
-
-//
-// create controls tab and root window
-//
-var win2 = Titanium.UI.createWindow({  
-    title:'Tab 2',
-    backgroundColor:'#fff'
-});
-var tab2 = Titanium.UI.createTab({  
-    icon:'KS_nav_ui.png',
-    title:'Tab 2',
-    window:win2
+var titleView = Ti.UI.createView ({
+	height: 65,
+	backgroundColor: "#fff",
+	top: 0
 });
 
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+var border = Ti.UI.createView ({
+	backgroundColor: "#dbdbdb",
+	height: 1,
+	top: titleView.height + titleView.top
 });
 
-win2.add(label2);
+var titleLabel = Ti.UI.createLabel ({
+	text: "ABOUT ME",
+	font: {fontSize: 30, fontFamily: "Arial", fontWeight: "bold"},
+	top: 30,
+	width: "100%",
+	textAlign: "center",
+	backgroundColor: "#A69D81"
+});
 
+//CUSTOM TABLE HEADER
+var aboutMeTableHeader = Ti.UI.createView ({
+	height: 50,
+	backgroundColor: "#042F56"
+});
 
+var aboutMeTableHeaderText = Ti.UI.createLabel ({
+	text: "About Me",
+	font: {fontSize: 22, fontWeight: "bold"},
+	color: "#fff"
+});
 
-//
-//  add tabs
-//
-tabGroup.addTab(tab1);  
-tabGroup.addTab(tab2);  
+aboutMeTableHeader.add(aboutMeTableHeaderText);
 
+// TABLE
+var aboutMe = Ti.UI.createTableView ({
+	//top: border.top + border.height
+});
 
-// open tab group
-tabGroup.open();
+if(Ti.Platform.name === "iPhone OS" ) {
+	aboutMe.style = Ti.UI.iPhone.TableViewStyle.GROUPED;
+}
+
+// SECTIONS && ROWS
+
+var aboutMeSection = Ti.UI.createTableViewSection ({
+	headerView: aboutMeTableHeader,
+});
+
+titleView.add(titleLabel);
+mainWindow.add(titleView, border, aboutMe);
+mainWindow.add(aboutMeSection);
+navWindow.open();
+
+//load require file
+var loadFile = require("info");
