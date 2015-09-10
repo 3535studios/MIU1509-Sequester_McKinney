@@ -114,6 +114,6 @@ var questionSections = [aboutMeSection];
 //setData method
 about.setData(questionSections);
 
-mainWindow.add(about);
+//mainWindow.add(about);
 
 navWindow.open();
