@@ -1,9 +1,0 @@
-// APP BACKGROUND COLOR
-Ti.UI.setBackgroundColor("#000");
-
-// DATA
-var aboutMe = [
-	{question: "Nimitz-Class", answer: "Admiral Chester W. Nimitz was one of the most brilliant Navy tacticians and strategists in history – a major factor in U.S. victory in the Pacific theater during WWII. In his honor, the Navy launched the USS. Nimitz. Nine other Nimitz-Class carriers followed that launch, eventually replacing the world's first class of nuclear carriers, the Enterprise class. For over 40 years, these gigantic ships have been the world's most dominant and capable warships."}, 
-	{question: "Ford-Class", answer: "The successor of the Nimitz-Class is the USS Gerald R. Ford. It's a new class of carrier, expected for delivery in 2015. It's represents the Navy's focus on super-advanced technology, efficiency and capabilities. An advanced reactor design gives it more power than the Nimitz class. It has stealth features to help reduce radar profile. For defense, a Ford-Class carrier features an evolved missile system and powerful AN/SPY-3 dual-band radar. Even the way it launches planes has changed – the Electromagnetic Aircraft Launch System (EMALS) replaces steam pistons with powerful magnets to launch jets."}
-	];
-

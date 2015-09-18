@@ -1,5 +1,9 @@
 =run
 1509_AboutMe_McKinney_Sequester\:launchMode=run
-1509_AboutMe_McKinney_Sequester\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.2C1ADD54-22F3-4F70-862E-7703CC097276
-LAST_LAUNCH_TIMESTAMP=1441856338681
+1509_AboutMe_McKinney_Sequester\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.38DA3EAC-0E05-4AF3-9A01-18C26F6F4B94
+1509_InfoApp_McKinney_Sequester\:launchMode=run
+1509_InfoApp_McKinney_Sequester\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.FB0D3751-60C9-477A-AB90-2470CDFF9094
+LAST_LAUNCH_TIMESTAMP=1442542345755
+Sandbox\:launchMode=run
+Sandbox\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.38DA3EAC-0E05-4AF3-9A01-18C26F6F4B94
 eclipse.preferences.version=1

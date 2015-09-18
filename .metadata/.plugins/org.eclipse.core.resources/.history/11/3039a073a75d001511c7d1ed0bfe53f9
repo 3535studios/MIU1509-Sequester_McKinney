@@ -1,0 +1,41 @@
+// APP BACKGROUND COLOR
+Ti.UI.setBackgroundColor("#000");
+
+
+//MAIN WINDOW
+var mainWindow = Ti.UI.createWindow ({
+	backgroundColor: "#eee",
+	title: "Women UFC Bantam Weight"
+});
+
+var navWindow = Ti.UI.iOS.createNavigationWindow ({
+	window: mainWindow
+});
+
+var imageBackground = Ti.UI.createImageView ({
+		image: "images/background.jpg",
+		layout: "vertical"
+	});
+	
+var openGalleryView = Ti.UI.createView ({
+	backgroundColor: "#6593B6",
+	borderRadius: 5,
+	width: 200,
+	height: 50,
+	top: imageBackground.height
+});
+
+var openGalleryLabel = Ti.UI.createLabel ({
+	text: "SEE YOUR FAVORITE FIGHTER",
+	color: "#fff",
+	align: "center"
+});
+
+openGalleryView.add(openGalleryLabel);
+mainWindow.add(imageBackground, openGalleryView);
+
+navWindow.open();
+
+
+//LOAD REQUIRED FILE
+var loadFile = require("info");
