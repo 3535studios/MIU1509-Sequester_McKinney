@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.appcelerator.titanium.mobile.ui.ios.simulator.launchConfigurationType">
+<booleanAttribute key="ATTR_CLEAN_BEFORE_LAUNCH" value="false"/>
 <stringAttribute key="ATTR_PROJECT_NAME" value="1509_InfoApp_McKinney_Sequester"/>
-<stringAttribute key="device_id" value="FB0D3751-60C9-477A-AB90-2470CDFF9094"/>
+<stringAttribute key="device_id" value="CDE061B5-EDA9-4A33-A164-3A5F1C84B52E"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/1509_InfoApp_McKinney_Sequester"/>
 </listAttribute>
@@ -9,6 +10,6 @@
 <listEntry value="4"/>
 </listAttribute>
 <stringAttribute key="process_factory_id" value="com.appcelerator.titanium.ui.logLevelFilteringProcessFactory"/>
-<stringAttribute key="sdk_version" value="8.4"/>
-<stringAttribute key="simulator_version" value="8.4"/>
+<stringAttribute key="sdk_version" value="9.0"/>
+<stringAttribute key="simulator_version" value="9.0"/>
 </launchConfiguration>

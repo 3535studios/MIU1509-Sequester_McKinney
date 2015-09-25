@@ -15,7 +15,7 @@ NSString * const TI_APPLICATION_NAME = @"1509_AboutMe_McKinney_Sequester";
 NSString * const TI_APPLICATION_VERSION = @"1.0";
 NSString * const TI_APPLICATION_DESCRIPTION = @"undefined";
 NSString * const TI_APPLICATION_COPYRIGHT = @"2015 by sequestermckinney";
-NSString * const TI_APPLICATION_GUID = @"0c614843-7c03-4bf0-b680-d2a45681b1a8";
+NSString * const TI_APPLICATION_GUID = @"c2a7b411-7f17-4d6a-9444-b9227cc33c63";
 BOOL const TI_APPLICATION_ANALYTICS = true;
 NSString * const TI_APPLICATION_BUILD_TYPE = @"";
 

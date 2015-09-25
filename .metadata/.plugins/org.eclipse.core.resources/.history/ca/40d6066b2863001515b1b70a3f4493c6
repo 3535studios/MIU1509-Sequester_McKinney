@@ -1,0 +1,33 @@
+// APP BACKGROUND COLOR
+Ti.UI.setBackgroundColor("#000");
+
+//NAVIGATION WINDOW
+var navWindow = Ti.UI.iOS.createNavigationWindow ({
+	window: mainWindow
+});
+
+
+// GLUCOSE DATA
+var glucose = [
+	{glucose-reading: "456", date: "09/24/15"}, 
+	{glucose-reading: "400",  date: "09/24/15"},
+	{glucose-reading: "380",  date: "09/24/15"},
+	{glucose-reading: "360",  date: "09/24/15"},
+	{glucose-reading: "300",  date: "09/24/15"},
+	{glucose-reading: "280",  date: "09/24/15"},
+	{glucose-reading: "200",  date: "09/24/15"},
+	{glucose-reading: "180",  date: "09/24/15"},
+	{glucose-reading: "100",  date: "09/24/15"},
+	{glucose-reading: "80",  date: "09/24/15"}
+	];
+	
+var textField = Ti.UI.createTextField({
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  color: '#336699',
+  top: 10, left: 10,
+  width: 250, height: 60
+});
+
+
+win.add(navWindow, textField);
+win.open();

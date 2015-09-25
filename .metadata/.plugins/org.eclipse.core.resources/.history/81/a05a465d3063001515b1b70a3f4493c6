@@ -1,0 +1,117 @@
+// APP BACKGROUND COLOR
+Ti.UI.setBackgroundColor("#000");
+
+//MAIN WINDOW
+var mainWindow = Ti.UI.createWindow ({
+	backgroundColor: "#f2f2f2",
+	title: "Diabetic Glucose"
+});
+
+//NAVIGATION WINDOW
+var navWindow = Ti.UI.iOS.createNavigationWindow ({
+	window: mainWindow
+});
+
+
+// GLUCOSE DATA
+var glucose = [
+	{glucoseReading: "456", date: "09/24/15"}, 
+	{glucoseReading: "400",  date: "09/24/15"},
+	{glucoseReading: "380",  date: "09/24/15"},
+	{glucoseReading: "360",  date: "09/24/15"},
+	{glucoseReading: "300",  date: "09/24/15"},
+	{glucoseReading: "280",  date: "09/24/15"},
+	{glucoseReading: "200",  date: "09/24/15"},
+	{glucoseReading: "180",  date: "09/24/15"},
+	{glucoseReading: "100",  date: "09/24/15"},
+	{glucoseReading: "80",  date: "09/24/15"}
+	];
+	
+var nameLabel = Ti.UI.createLabel({
+  color: '#900',
+  font: { fontSize:16 },
+  text: 'Name:',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  top: 10, left: 10,
+  width: Ti.UI.SIZE, height: Ti.UI.SIZE
+});
+	
+var nameField = Ti.UI.createTextField({
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  color: '#336699',
+  hintText: 'Enter Your Full Name',
+  top: 30, left: 10,
+  width: 250, height: 30
+});
+
+var dateLabel = Ti.UI.createLabel({
+  color: '#900',
+  font: { fontSize:16 },
+  text: 'Name:',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  top: 50, left: 10,
+  width: Ti.UI.SIZE, height: Ti.UI.SIZE
+});
+	
+var dateField = Ti.UI.createTextField({
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  color: '#336699',
+  hintText: 'Enter The Date',
+  top: 100, left: 10,
+  width: 250, height: 30
+});
+
+var glucoseLabel = Ti.UI.createLabel({
+  color: '#900',
+  font: { fontSize:16 },
+  text: 'Name:',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  top: 10, left: 0,
+  width: Ti.UI.SIZE, height: Ti.UI.SIZE
+});
+	
+var glucoseField = Ti.UI.createTextField({
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  color: '#336699',
+  hintText: 'Enter Glucose',
+  top: 100, left: 10,
+  width: 250, height: 30
+});
+
+var typeLabel = Ti.UI.createLabel({
+  color: '#900',
+  font: { fontSize:16 },
+  text: 'Name:',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  top: 10, left: 0,
+  width: Ti.UI.SIZE, height: Ti.UI.SIZE
+});
+	
+var typeField = Ti.UI.createTextField({
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  color: '#336699',
+  hintText: 'Enter Type of Diabetes',
+  top: 30, left: 10,
+  width: 250, height: 30
+});
+
+var genderLabel = Ti.UI.createLabel({
+  color: '#900',
+  font: { fontSize:16 },
+  text: 'Name:',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  top: 10, left: 0,
+  width: Ti.UI.SIZE, height: Ti.UI.SIZE
+});
+	
+var genderField = Ti.UI.createTextField({
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  color: '#336699',
+  hintText: 'Enter Your Gender',
+  top: 30, left: 10,
+  width: 250, height: 30
+});
+
+
+mainWindow.add(nameLabel, dateLabel, glucoseLabel, typeLabel, genderLabel, nameField, dateField, glucoseField, typeField, genderField);
+navWindow.open();

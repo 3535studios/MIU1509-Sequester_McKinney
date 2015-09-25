@@ -16,9 +16,9 @@
 	"version": "1.0",
 	"description": "undefined",
 	"copyright": "2015 by sequestermckinney",
-	"guid": "bfb1167e-fd9b-4ee0-846f-440d758df470",
+	"guid": "261c7b41-3950-4ee2-9ccc-55be29851681",
 	"skipJSMinification": true,
 	"forceCopy": false,
 	"forceCopyAll": false,
-	"encryptJS": false
+	"encryptJS": true
 }
